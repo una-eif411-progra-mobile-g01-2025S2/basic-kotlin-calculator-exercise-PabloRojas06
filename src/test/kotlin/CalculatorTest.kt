@@ -35,4 +35,19 @@ class CalculatorTest {
         assertEquals(5.0, result)
     }
 
+
+    //error tests
+    @Test
+    fun testDivisionByZero() {
+        assertThrows(IllegalArgumentException::class.java) {
+            calculator.divide(10.0, 0.0)
+        }
+    }
+
+    @Test
+    fun testAdditionWithNegativeNumbers() {
+        val result = calculator.add(-3.0, -2.0)
+        assertEquals(-5.0, result)
+    }
+
 }
