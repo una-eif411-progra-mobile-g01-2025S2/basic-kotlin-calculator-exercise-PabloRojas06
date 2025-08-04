@@ -17,4 +17,22 @@ class CalculatorTest {
         assertEquals(5.0, result)
     }
 
+    @Test
+    fun testSubtraction() {
+        val result = calculator.subtract(10.0, 4.0)
+        assertEquals(6.0, result)
+    }
+
+    @Test
+    fun testMultiplication() {
+        val result = calculator.multiply(3.0, 4.0)
+        assertEquals(12.0, result)
+    }
+
+    @Test
+    fun testDivision() {
+        val result = calculator.divide(10.0, 2.0)
+        assertEquals(5.0, result)
+    }
+
 }
